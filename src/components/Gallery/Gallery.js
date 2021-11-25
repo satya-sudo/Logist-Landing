@@ -16,12 +16,12 @@ class PhotoGallery extends Component {
     photo: [
       {
         id: 1,
-        img: "https://source.unsplash.com/1600x900/?hotel",
+        img: "https://images.unsplash.com/photo-1591369839359-e1e548de744e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJ1Y2t8fHx8fHwxNjM3ODI5MDA3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600",
         alt: "hotel"
       },
       {
         id: 2,
-        img: "https://source.unsplash.com/1600x900/?restaurant",
+        img: "https://images.unsplash.com/photo-1584527810790-01a904be796b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJ1Y2tzfHx8fHx8MTYzNzgyOTE1OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600",
         alt: "restaurant"
       },
       {
@@ -36,7 +36,7 @@ class PhotoGallery extends Component {
       },
       {
         id: 5,
-        img: "https://source.unsplash.com/1600x900/?travel",
+        img: "https://images.unsplash.com/photo-1584527810790-01a904be796b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJ1Y2tzfHx8fHx8MTYzNzgyOTE1OA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600",
         alt: "travel"
       },
       {

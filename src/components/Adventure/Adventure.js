@@ -3,6 +3,8 @@ import Resort1 from '../../images/banner4.jpg';
 import Resort2 from '../../images/banner5.jpg';
 import Resort3 from '../../images/banner8.jpg';
 import { HashLink as Link } from 'react-router-hash-link';
+import "./Adventure.css";
+
 
 class Popular extends Component {
   render() {
@@ -16,7 +18,7 @@ class Popular extends Component {
               <div className="card">
                 <div className="card-image">
                   <img src={Resort1} alt="" />
-                  <span className="card-title">Cuba</span>
+                  <span className="card-title">IntraCity</span>
                   <Link class="btn-floating activator halfway-fab waves-effect waves-light black" href="#"><i class="material-icons">add</i></Link>
                 </div>
                 <div className="card-content">
@@ -25,7 +27,7 @@ class Popular extends Component {
                   </p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Cuba<i class="material-icons right">close</i></span>
+                  <span class="card-title grey-text text-darken-4">Inter-city<i class="material-icons right">close</i></span>
                   <p>Here is some more information about this trip</p>
                 </div>
               </div>
@@ -34,7 +36,7 @@ class Popular extends Component {
               <div className="card">
                 <div className="card-image">
                   <img src={Resort2} alt="" />
-                  <span className="card-title">Halong Bay</span>
+                  <span className="card-title">Hire Truck</span>
                   <Link class="btn-floating activator halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></Link>
                 </div>
                 <div className="card-content">
@@ -52,7 +54,7 @@ class Popular extends Component {
               <div className="card">
                 <div className="card-image">
                   <img src={Resort3} alt="" />
-                  <span className="card-title">Costa Rica</span>
+                  <span className="card-title">Inter-City</span>
                   <Link class="btn-floating activator halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></Link>
                 </div>
                 <div className="card-content">

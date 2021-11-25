@@ -5,6 +5,8 @@ import Imgtwo from '../../images/banner6.jpg';
 import Imgthree from '../../images/banner7.jpg';
 import './Banner.css';
 import { Link } from 'react-router-dom';
+import "./Banner.css";
+
 
 class Banner extends Component {
   render() {

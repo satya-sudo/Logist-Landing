@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import "./Navbar.css";
+
 
 
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
+import "./Contact.css";
+
 
 class Contact extends Component {
   render() {
