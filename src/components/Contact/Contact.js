@@ -2,8 +2,31 @@ import React, { Component } from 'react';
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import "./Contact.css";
 
+import db from '../../utils/firebase';
+
+let profileRef =  db.collection('data');
 
 class Contact extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+  }
+
+
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+    profileRef.add(this.state);
+
+  }
+
   render() {
     return (
       <section id="contact" className="section section-contact scrollspy">
@@ -29,21 +52,21 @@ class Contact extends Component {
             <div className="col s12 m6">
               <div className="card-panel grey lighten-3">
                 <h5>Please fill out this form</h5>
-                <form>
+                <form  onSubmit={this.handleSubmit}>
                   <div className="input-field">
-                    <input type="text" id="name" className="validate" />
+                    <input type="text" id="name" className="validate"  value={this.state.name} onChange={(e)=>{this.setState({name:e.target.value})}} />
                     <label for="name" className="black-text">Name</label>
                   </div>
                   <div className="input-field">
-                    <input type="email" id="email" />
+                    <input type="email" id="email" value={this.state.email} onChange={(e)=>{this.setState({email:e.target.value})}} />
                     <label for="email" className="black-text">Email</label>
                   </div>
                   <div className="input-field">
-                    <input type="text" id="phone" />
-                    <label for="phone" className="black-text">Phone</label>
+                    <input type="text" id="phone" value={this.state.phone}  onChange={(e)=>{this.setState({phone:e.target.value})}}/>
+                    <label for="phone" className="black-text"  >Phone</label>
                   </div>
                   <div className="input-field">
-                    <textarea className="materialize-textarea" id="message" data-length="120"></textarea>
+                    <textarea className="materialize-textarea" id="message" data-length="120" value={this.state.message} onChange={(e)=>{this.setState({message:e.target.value})}}></textarea>
                     <label for="message" className="black-text">Message</label>
                   </div>
                   <input type="submit" value="Submit" className="btn black" />
